@@ -1,0 +1,20 @@
+#spring.application.name=Backend Spring
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dep_test
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update #create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    database: mysql
+  application:
+    name: Backend Spring
+#

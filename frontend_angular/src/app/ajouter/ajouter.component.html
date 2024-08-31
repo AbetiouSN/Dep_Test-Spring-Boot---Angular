@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="container">
+<p class="text-center mt-4">Ajouter un utilisateur</p>
+
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="container mt-4">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label class="form-label" for="form3Example1m">Prénom</label>
+      <input
+        placeholder="Prénom"
+        type="text"
+        id="form3Example1m"
+        class="form-control form-control-lg"
+        formControlName="prenom"
+      />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label" for="form2Example1m">Nom</label>
+      <input
+        placeholder="Nom"
+        type="text"
+        id="form2Example1m"
+        class="form-control form-control-lg"
+        formControlName="nom"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-end">
+      <button type="reset" class="btn btn-secondary btn-lg me-2">Réinitialiser</button>
+      <button type="submit" class="btn btn-primary btn-lg">Soumettre</button>
+    </div>
+  </div>
+</form>
+</div>
